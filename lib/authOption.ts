@@ -16,7 +16,7 @@ export const authoptions = {
       authorization: {
         params: {
           scope: "openid profile email https://www.googleapis.com/auth/youtube.upload",
-          redirect_uri: "http://localhost:3000/api/auth/callback/google-owner",
+          redirect_uri: `${process.env.NEXTAUTH_URL}/api/auth/callback/google-owner`,
           prompt: "consent",
           access_type: "offline",
           response_type: "code",
@@ -30,7 +30,7 @@ export const authoptions = {
       authorization: {
         params: {
           scope: "openid profile email",
-          redirect_uri: "http://localhost:3000/api/auth/callback/google-editor",
+          redirect_uri:  `${process.env.NEXTAUTH_URL}/api/auth/callback/google-editor`,
           prompt: "consent",
           access_type: "offline",
           response_type: "code",
