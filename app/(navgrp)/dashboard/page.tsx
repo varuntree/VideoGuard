@@ -5,7 +5,7 @@ import { WavyBackground } from "@/components/ui/wavy-background";
 import { useSession } from "next-auth/react";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   const { data, status } = useSession();
   if (status == "loading") {
     return (
@@ -44,4 +44,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -60,12 +60,6 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export const config = {
-  api: {
-    bodyParser: true,
-  },
-};
-
 
 function readableStreamToNodeReadable(readableStream: ReadableStream<Uint8Array>): Readable {
   const reader = readableStream.getReader();
