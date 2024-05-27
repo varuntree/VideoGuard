@@ -102,7 +102,7 @@ const Page = () => {
     return (
         <div>
             {showToast && (
-                <div className="toast">
+                <div className="toast z-20">
                     <div className="alert bg-green-600 alert-info">
                         <span>Updated Successfully</span>
                     </div>

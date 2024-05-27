@@ -27,7 +27,7 @@ export default function Signin(){
       return router.push('/dashboard')
   }
     return (
-    <div className="min-h-screen flex-grow flex flex-col items-center md:flex-row md:justify-around p-10">
+    <div className="min-h-screen w-full flex-grow flex flex-col items-center md:flex-row md:justify-around ">
       <div className="h-full lg:flex justify-center items-center  prose p-5">
         <Spotlight></Spotlight>
           <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
