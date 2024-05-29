@@ -65,8 +65,8 @@ const VideoComponent = ({
     });
 
     if (setvideo) {
-      setShowToast(true);
       setToastMessage("Deleted Successfully");
+      setShowToast(true);     
       setTimeout(() => {
         setShowToast(false);
         // window.location.reload();
